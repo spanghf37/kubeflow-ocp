@@ -3,7 +3,7 @@ kind: UserConfig
 metadata:
   name: kubeflow-user
 spec:
-  provider: my_htpasswd_provider
+  provider: htpasswd
   #name: {{ index (lookup "user.openshift.io/v1" "Identity" "" (index .Identities 0)).Extra "email" }}
   templates:
   - objectTemplate: |
@@ -17,8 +17,8 @@ spec:
           name: {{ .Name }}
         resourceQuotaSpec:
           hard:
-            cpu: "8"
-            memory: 16Gi
+            cpu: "4"
+            memory: 8Gi
             "requests.nvidia.com/gpu": "10"
             persistentvolumeclaims: "10"
             requests.storage: "200Gi"
