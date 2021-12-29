@@ -20,47 +20,48 @@ resources:
 # - https://github.com/kubeflow/manifests/common/knative/knative-serving-install/base
 # - https://github.com/kubeflow/manifests/common/knative/knative-eventing-crds/base
 # - https://github.com/kubeflow/manifests/common/knative/knative-eventing-install/base
-- https://github.com/kubeflow/manifests/common/istio-1-9-0/cluster-local-gateway/base/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/common/istio-1-9-0/cluster-local-gateway/base/?ref=v1.3-openshift
 # Kubeflow namespace
-# - https://github.com/kubeflow/manifests/common/kubeflow-namespace/base/?ref=v1.3.0
+# - https://github.com/opendatahub-io/manifests/common/kubeflow-namespace/base/?ref=v1.3-openshift
 # Kubeflow Roles
-- https://github.com/kubeflow/manifests/common/kubeflow-roles/base/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/common/kubeflow-roles/base/?ref=v1.3-openshift
 # Kubeflow Istio Resources
-- https://github.com/kubeflow/manifests/common/istio-1-9-0/kubeflow-istio-resources/base/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/common/istio-1-9-0/kubeflow-istio-resources/base/?ref=v1.3-openshift
 
 
 # Kubeflow Pipelines
-- https://github.com/kubeflow/manifests/apps/pipeline/upstream/env/platform-agnostic-multi-user/?ref=v1.3.0
+# - https://github.com/opendatahub-io/manifests/apps/pipeline/upstream/env/platform-agnostic-multi-user/?ref=v1.3-openshift
+- https://github.com/opendatahub-io/manifests/apps/kfp-tekton/upstream/env/platform-agnostic-multi-user/?ref=v1.3-openshift
 # KFServing
-- https://github.com/kubeflow/manifests/apps/kfserving/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/kfserving/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # Katib
-- https://github.com/kubeflow/manifests/apps/katib/upstream/installs/katib-with-kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/katib/upstream/installs/katib-with-kubeflow/?ref=v1.3-openshift
 # Central Dashboard
-- https://github.com/kubeflow/manifests/apps/centraldashboard/upstream/overlays/istio/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/centraldashboard/upstream/overlays/istio/?ref=v1.3-openshift
 # Admission Webhook
-- https://github.com/kubeflow/manifests/apps/admission-webhook/upstream/overlays/cert-manager/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/admission-webhook/upstream/overlays/cert-manager/?ref=v1.3-openshift
 # Notebook Controller
-- https://github.com/kubeflow/manifests/apps/jupyter/jupyter-web-app/upstream/overlays/istio/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/jupyter/jupyter-web-app/upstream/overlays/istio/?ref=v1.3-openshift
 # Jupyter Web App
-- https://github.com/kubeflow/manifests/apps/jupyter/notebook-controller/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/jupyter/notebook-controller/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # Profiles + KFAM
-- https://github.com/kubeflow/manifests/apps/profiles/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/profiles/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # Volumes Web App
-- https://github.com/kubeflow/manifests/apps/volumes-web-app/upstream/overlays/istio/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/volumes-web-app/upstream/overlays/istio/?ref=v1.3-openshift
 # Tensorboards Web App
--  https://github.com/kubeflow/manifests/apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow/?ref=v1.3.0
+-  https://github.com/opendatahub-io/manifests/apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # Tensorboard Controller
--  https://github.com/kubeflow/manifests/apps/tensorboard/tensorboards-web-app/upstream/overlays/istio/?ref=v1.3.0
+-  https://github.com/opendatahub-io/manifests/apps/tensorboard/tensorboards-web-app/upstream/overlays/istio/?ref=v1.3-openshift
 # TFJob Operator
-- https://github.com/kubeflow/manifests/apps/tf-training/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/tf-training/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # Pytorch Operator
-- https://github.com/kubeflow/manifests/apps/pytorch-job/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/pytorch-job/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # MPI Operator
-- https://github.com/kubeflow/manifests/apps/mpi-job/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/mpi-job/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # MXNet Operator
-- https://github.com/kubeflow/manifests/apps/mxnet-job/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/mxnet-job/upstream/overlays/kubeflow/?ref=v1.3-openshift
 # XGBoost Operator
-- https://github.com/kubeflow/manifests/apps/xgboost-job/upstream/overlays/kubeflow/?ref=v1.3.0
+- https://github.com/opendatahub-io/manifests/apps/xgboost-job/upstream/overlays/kubeflow/?ref=v1.3-openshift
 
 # User namespace
 # - https://github.com/kubeflow/manifests/common/user-namespace/base
