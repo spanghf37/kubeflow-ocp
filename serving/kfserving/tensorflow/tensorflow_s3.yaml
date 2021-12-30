@@ -1,9 +1,13 @@
-apiVersion: "serving.kserve.io/v1beta1"
+apiVersion: "serving.kubeflow.org/v1beta1"
 kind: "InferenceService"
 metadata:
   name: "mnist-s3"
+  annotations:
+    sidecar.istio.io/inject: "false"
+  labels:
+    workload-type: kfserving   
 spec:
   predictor:
-    serviceAccountName: sa
+    serviceAccountName: default-editor
     tensorflow:
       storageUri: "s3://kfserving-examples/mnist"
