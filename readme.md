@@ -10,7 +10,7 @@ We assume that that the following operators are installed:
 * [gatekeeper-operator](https://github.com/gatekeeper/gatekeeper-operator)
 * [proactive-node-autoscaling](https://github.com/redhat-cop/proactive-node-scaling-operator)
 * Red Hat OpenShift distributed tracing platformRed Hat OpenShift distributed tracing platform
-*
+
 We assume that there is a ServiceMesh control plane fully dedicated to the Kubeflow workloads.
 
 This approach sets up Single Sign On (SSO) between Kubeflow and OpenShift.
