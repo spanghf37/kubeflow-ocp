@@ -12,6 +12,9 @@ We assume that that the following operators are installed:
 * Red Hat OpenShift distributed tracing platform
 * Kiali Operator
 
+* Create namespace "istio-system"
+* Create instances "knative-serving" and "knative-eventing"
+
 We assume that there is a ServiceMesh control plane fully dedicated to the Kubeflow workloads.
 
 This approach sets up Single Sign On (SSO) between Kubeflow and OpenShift.
