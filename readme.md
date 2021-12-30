@@ -169,6 +169,7 @@ envsubst < ./openshift/kubeflow-sm-member.yaml | oc apply -f - -n kubeflow
 oc apply -f ./openshift/allow-apiserver-webhooks.yaml -n kubeflow
 oc adm policy add-scc-to-user anyuid -z kubeflow-pipelines-cache-deployer-sa -n kubeflow
 oc adm policy add-scc-to-user anyuid -z xgboost-operator-service-account -n kubeflow
+oc adm policy add-scc-to-user anyuid -z cluster-local-gateway-service-account -n istio-system
 ```
 
 deploy kubeflow
