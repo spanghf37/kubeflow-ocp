@@ -8,6 +8,6 @@ metadata:
     workload-type: kfserving   
 spec:
   predictor:
-    serviceAccountName: default-editor
+    serviceAccountName: sa
     tensorflow:
       storageUri: "s3://kfserving-examples/mnist"
