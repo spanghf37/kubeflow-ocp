@@ -26,8 +26,22 @@ spec:
       apiVersion: rbac.authorization.k8s.io/v1
       kind: RoleBinding
       metadata:
-        name: kubeflow-editor
-        namespace: {{ .Name }}
+        name: kubeflow-view-{{ .Name }}
+        namespace: kubeflow
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: ClusterRole
+        name: kubeflow-view
+      subjects:
+      - kind: User
+        apiGroup: rbac.authorization.k8s.io
+        name: {{ .Name }}
+  - objectTemplate: | 
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
+      metadata:
+        name: kubeflow-view
+        namespace: kubeflow
       roleRef:
         apiGroup: rbac.authorization.k8s.io
         kind: ClusterRole
@@ -35,7 +49,7 @@ spec:
       subjects:
       - kind: User
         apiGroup: rbac.authorization.k8s.io
-        name: {{ .Name }}  
+        name: {{ .Name }}          
   - objectTemplate: | 
       apiVersion: rbac.authorization.k8s.io/v1
       kind: RoleBinding
